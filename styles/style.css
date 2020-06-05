@@ -1,3 +1,11 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+*:focus {
+    outline: none;
+}
 .content {
     width: 1080px;
     margin: 0 auto;
@@ -13,3 +21,139 @@
 .head:hover {
     color: #b1ffc5;
 }
+
+.background {
+    position: fixed;
+    width: 50vw;
+    height: 100%;
+    background-color: #41559C;
+    background-position-x: 50%;
+}
+
+.auth .form {
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 510px;
+    height: 592px;
+    border-radius: 30px;
+    border: 1px solid #41559C;
+}
+
+.form {
+    font-family: 'Roboto';
+    background-color: #fff;
+}
+
+.form h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 91px;
+    font-size: 24px;
+    color: #7B7B7B;
+}
+
+.inputs {
+    width: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+
+}
+
+.login, .password {
+    height: 34px;
+    border: none;
+    border-bottom: 1px solid #7B7B7B;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #7B7B7B;
+}
+
+.login:focus, .password:focus {
+    outline: none;
+    background-color: #f2ffe5;
+}
+
+.login::placeholder, .password::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #7B7B7B;
+}
+
+.input-group {
+    position: relative;
+}
+.login {
+    margin-bottom: 63px;
+}
+.login-img {
+    right: 40px;
+    position: absolute;
+}
+.password-img {
+    right: 40px;
+    top: 41%;
+    position: absolute;
+}
+.password {
+    margin-bottom: 54px;
+}
+
+.submit {
+    margin: 0 auto;
+    border: none;
+    background: #41559C;
+    border-radius: 30px;
+    width: 154px;
+    height: 46px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+.submit:hover {
+    cursor: pointer;
+   font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
