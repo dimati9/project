@@ -1,7 +1,7 @@
 <h1>Добавить пользователя: </h1>
 <?php if(!empty($id)) : ?>
 	<h2>Пользователь успено добавлен</h2>
-<p>Ему отправлена персональная ссылка: <?=$link?></p>
+<p>Ему отправлена персональная ссылка: <?=$site . "?l="  . $link?></p>
 <?php endif;?>
 <form action="" method="post">
 	<input type="hidden" name="action" value="add_user">
@@ -12,11 +12,13 @@
 		<?php endforeach;?>
 	</select>
 	<label>
+		E-mail
 		<input type="text" name="email">
 	</label>
 	<label>
+		ФИО
 		<input type="text" name="name">
 	</label>
-	<input type="Добавить">
+	<input type="submit" value="Добавить">
 </form>
 

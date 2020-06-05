@@ -1,0 +1,11 @@
+# Редирект с http на https создан автоматически при заказе бесплатного ssl-сертификата
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+# Конец редиректа
+
+RewriteCond %{HTTP_HOST} ^www.gos-document\.ru$ [NC]
+RewriteRule ^(.*)$ https://gos-document.ru/$1 [R=301,L]
+
+RewriteRule ^personal/? index.php?page=personal [L]
+RewriteRule ^admin/([0-9]+)/? index.php?page=admin&id=$1 [L]
