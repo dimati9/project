@@ -2,6 +2,7 @@
 <div class="background">
 </div>
 	<div class="content auth">
+		<div class="rosatom"><span class="rosatom1">РОС</span>АТОМ</div>
 		<form action="" class="form" method="post">
 			<h3>Вход для администратора</h3>
 			<div class="inputs">

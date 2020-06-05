@@ -98,6 +98,20 @@ html, body {
     color: #7B7B7B;
 }
 
+.rosatom {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+}
+.rosatom1 {
+    font-weight: bold;
+}
+
 .input-group {
     position: relative;
 }
