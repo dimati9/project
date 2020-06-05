@@ -1,0 +1,15 @@
+.content {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.head {
+    color: #fff;
+}
+.head:hover {
+    color: #b1ffc5;
+}
