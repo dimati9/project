@@ -177,6 +177,22 @@ tr {
     margin: 20px;
 }
 
+.tags {
+    margin-top: 20px;
+}
+.position {
+    font-size: 22px;
+}
+.tags li {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    padding-top: 18px;
+    border-top: 1px solid gray;
+}
+
 .button-show {
     left: 305px;
     top: 10%;
