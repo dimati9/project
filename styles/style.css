@@ -166,7 +166,7 @@ tr {
 
 .left-panel {
     overflow: hidden;
-    height: 110vh;
+    height: 1000vh;
     width: 338px;
     background: #41559C;
     left: 0;
@@ -197,7 +197,7 @@ h5 {
     left: 305px;
     top: 10%;
     transform: translate(0, -50%);
-    position: absolute;
+    position: fixed;
     color: #fff;
     font-size: 50px;
     z-index: 11;

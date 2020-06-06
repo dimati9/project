@@ -81,6 +81,6 @@ function main($argv) {
     echo "Usage: $script [-i <input encoding>] [-o <output encoding>] -f <file.rtf>\n";
     return;
   }
-  echo extractText($filename, $config);
+//  echo extractText($filename, $config);
 }
 

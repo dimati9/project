@@ -1,6 +1,10 @@
 <?php
 @session_start();
 
+ini_set('error_reporting', E_ERROR);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+
 require 'pdo.php';
 $site = "https://amazing-projects.ru/projectx/";
 
@@ -35,9 +39,7 @@ if(!empty($_POST['action'])) {
 	}
 }
 
-if(!empty($_GET)) {
-//	print_r($_GET);
-}
+
 
 if(!empty($_GET['action'])) {
 	$action = trim($_GET['action']);
