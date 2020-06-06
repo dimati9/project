@@ -99,6 +99,7 @@ html, body {
 }
 
 .rosatom {
+    background-color: #41559C;
     position: absolute;
     left: 30px;
     top: 30px;
@@ -107,6 +108,9 @@ html, body {
     color: #fff;
     font-size: 18px;
     line-height: 21px;
+}
+.hiden .rosatom {
+    display: none;
 }
 .rosatom1 {
     font-weight: bold;
@@ -152,12 +156,131 @@ html, body {
    font-size: 26px;
 }
 
+.left-panel {
+    overflow: hidden;
+    height: 110vh;
+    width: 338px;
+    background: #41559C;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.button-show {
+    left: 305px;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    z-index: 11;
+}
+.hiden .button-show {
+    color: #000;
+    left: 11px;
+    background-color: #fff;
+    padding: 10px;
+}
+.hiden .button-show:visited {
+    color: #000;
+    background-color: #fff;
+}
+.button-show:visited {
+    color: #fff;
+}
+.button-show:hover {
+    font-weight: 600;
+    font-size: 52px;
+}
 
 
 
+.admin_id {
+    margin-top: 97px;
+    margin-left: 21px;
+    margin-right: 21px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 
 
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7D94E3;
+}
+
+.admin_id_sng {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+
+.admin_id span {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+.menu-item {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-item svg {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+}
+.menu-item a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu-item__active a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.menu-item a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 
 
