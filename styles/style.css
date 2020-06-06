@@ -69,6 +69,14 @@ html, body {
 
 }
 
+tr {
+    border-bottom: 1px solid gray;
+}
+
+.add_user_form {
+    margin: 0 auto;
+}
+
 .login, .password {
     height: 34px;
     border: none;
@@ -171,7 +179,7 @@ html, body {
 
 .button-show {
     left: 305px;
-    top: 18%;
+    top: 10%;
     transform: translate(0, -50%);
     position: absolute;
     color: #fff;

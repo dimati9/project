@@ -1,6 +1,7 @@
 <div class="flex">
 	<?= include_once 'left-panel.php' ?>
 
+	<?= include_once 'add_user_form.php' ?>
 	<div class="right">
 		<h1>Добавить пользователя: </h1>
 		<?php if(!empty($id)) : ?>

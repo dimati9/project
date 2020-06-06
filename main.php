@@ -27,16 +27,16 @@ if(!empty($_POST) && !empty($_POST['login'])) {
 if(!empty($_POST['action'])) {
 	if($_POST['action'] == 'add_user') {
 		$link = time('siHdny');
-		$lastName = explode(" ",$_POST['name'])[0];
-		$name = explode(" ",$_POST['name'])[1];
-		$patronymic = explode(" ",$_POST['name'])[2];
+		$lastName = trim($_POST['lastname']);
+		$name = trim($_POST['firstname']);
+		$patronymic = trim($_POST['patronymic']);
 		$id = DB::add('INSERT INTO `users` SET `position_id` = ?, `link` = ?, `name` = ?, `lastName` = ?,
 		`patronymic` = ?', array($_POST['positions'], $link, $name, $lastName, $patronymic));
 	}
 }
 
 if(!empty($_GET)) {
-	print_r($_GET);
+//	print_r($_GET);
 }
 
 if(!empty($_GET['action'])) {
