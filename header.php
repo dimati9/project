@@ -8,6 +8,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Project X</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./styles/style.css"/>
+	<link rel="stylesheet" href="<?=$site?>/styles/style.css"/>
 </head>
 <body>
