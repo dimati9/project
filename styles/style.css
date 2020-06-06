@@ -161,9 +161,12 @@ html, body {
     height: 110vh;
     width: 338px;
     background: #41559C;
-    position: absolute;
     left: 0;
     top: 0;
+}
+
+.right {
+    margin: 20px;
 }
 
 .button-show {
@@ -193,7 +196,10 @@ html, body {
     font-size: 52px;
 }
 
-
+.flex {
+    display: flex;
+    flex-direction: row;
+}
 
 .admin_id {
     margin-top: 97px;
