@@ -171,7 +171,7 @@ html, body {
 
 .button-show {
     left: 305px;
-    top: 50%;
+    top: 18%;
     transform: translate(0, -50%);
     position: absolute;
     color: #fff;
@@ -241,7 +241,9 @@ html, body {
     color: #FFFFFF;
 
 }
-
+.menu-items .admin_id_sng {
+    top: -2px;
+}
 .menu-items {
     display: flex;
     flex-direction: column;

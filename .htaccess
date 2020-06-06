@@ -4,8 +4,8 @@ RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 # Конец редиректа
 
-RewriteCond %{HTTP_HOST} ^www.gos-document\.ru$ [NC]
-RewriteRule ^(.*)$ https://gos-document.ru/$1 [R=301,L]
-
+RewriteRule ^admin/user/([0-9]+)/? index.php?page=admin&user=$1 [L]
+RewriteRule ^lc/([0-9]+)/? index.php?l=$1 [L]
+RewriteRule ^admin/([-a-zA-Z0-9_]+)/? index.php?page=admin&action=$1 [L]
+RewriteRule ^admin? index.php?page=admin [L]
 RewriteRule ^personal/? index.php?page=personal [L]
-RewriteRule ^admin/([0-9]+)/? index.php?page=admin&id=$1 [L]

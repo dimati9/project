@@ -9,6 +9,7 @@ if(isset($_GET['out'])) {
 	header('Location: '.$site);
 }
 
+
 if(isset($_GET['l'])) {
 	$user = DB::getRow('SELECT * FROM `users` WHERE `link` = ?',array(trim((int)$_GET['l'])));
 	if(!empty($user['id'])) {
@@ -33,6 +34,15 @@ if(!empty($_POST['action'])) {
 		`patronymic` = ?', array($_POST['positions'], $link, $name, $lastName, $patronymic));
 	}
 }
+
+if(!empty($_GET)) {
+	print_r($_GET);
+}
+
+if(!empty($_GET['action'])) {
+	$action = trim($_GET['action']);
+}
+
 if(empty($_SESSION['login']) && empty($_SESSION['user_id'])) {
 	$page = 'auth';
 } else {
@@ -41,6 +51,7 @@ if(empty($_SESSION['login']) && empty($_SESSION['user_id'])) {
 	} else {
 		if(empty($_GET['page'])) {
 			$page = 'admin';
+			@header('Location: '.$site .'/admin/');
 		} else {
 			$page = $_GET['page'];
 		}
