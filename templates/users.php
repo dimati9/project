@@ -2,6 +2,7 @@
 	<?= include_once 'left-panel.php'; ?>
 
 	<div class="right">
+		<h1>Пользователи: </h1>
 		<table>
 			<tr>
 				<td>ФИО</td>
